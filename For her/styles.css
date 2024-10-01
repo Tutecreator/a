@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('fondo_castillo.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    animation: aparecer 2s ease-out;
+}
+
+h1 {
+    color: #4A148C;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.mensaje {
+    font-size: 1.2em;
+    color: #1A237E;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
